@@ -1,40 +1,30 @@
 {
     "awardsSection": {
       "title": "Награды",
-      "awards": [
-        {
-          "containerId": "award-container-1",
-          "imgId": "award-img-1",
-          "textId": "award-text-1",
-          "imgSrc1": ".src/svg/german-design-award.svg",
-          "imgAlt": "German Design Award",
-          "text": "German Design Award<br />2021"
-        },
-        {
-          "containerId": "award-container-2",
-          "imgId": "award-img-2",
-          "textId": "award-text-2",
-          "imgSrc2": "./svg/a-design-award.svg",
-          "imgAlt": "Gold A’ Design Award",
-          "text": "Gold A’ Design Award<br />2021"
-        },
-        {
-          "containerId": "award-container-3",
-          "imgId": "award-img-3",
-          "textId": "award-text-3",
-          "imgSrc3": "./svg/if-design-award.svg",
-          "imgAlt": "IF Design Award",
-          "text": "IF Design Award<br />2020"
-        },
-        {
-          "containerId": "award-container-4",
-          "imgId": "award-img-4",
-          "textId": "award-text-4",
-          "imgSrc4": "./svg/good-design-award.svg",
-          "imgAlt": "Good Design Award",
-          "text": "Good Design Award<br />2019"
-        }
-      ]
+      "containerId1": "award-container-1",
+      "imgId1": "award-img-1",
+      "textId1": "award-text-1",
+      "imgSrc1": ".src/svg/german-design-award.svg",
+      "imgAlt1": "German Design Award",
+      "text1": "German Design Award<br />2021",
+      "containerId2": "award-container-2",
+      "imgId2": "award-img-2",
+      "textId2": "award-text-2",
+      "imgSrc2": ".src/svg/a-design-award.svg",
+      "imgAlt2": "Gold A’ Design Award",
+      "text2": "Gold A’ Design Award<br />2021",
+      "containerId3": "award-container-3",
+      "imgId3": "award-img-3",
+      "textId3": "award-text-3",
+      "imgSrc3": ".src/svg/if-design-award.svg",
+      "imgAlt3": "IF Design Award",
+      "text3": "IF Design Award<br />2020",
+      "containerI4d": "award-container-4",
+      "imgId4": "award-img-4",
+      "textId4": "award-text-4",
+      "imgSrc4": ".src/svg/good-design-award.svg",
+      "imgAlt4": "Good Design Award",
+      "text4": "Good Design Award<br />2019"
     }
   }
   

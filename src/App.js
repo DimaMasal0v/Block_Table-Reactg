@@ -3,6 +3,7 @@ import './App.css';
 import Header from './header.js';
 import Title from './header-title.js'
 import Awards from './awards.js';
+import About from './About-us.js';
 
 const App = () => {
   return (
@@ -10,6 +11,11 @@ const App = () => {
       <Header/>
       <Title/>
       <Awards/>
+      <About/>
+
+      <script>
+        
+      </script>
     </body>
   );
 }

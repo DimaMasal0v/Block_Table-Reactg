@@ -132,3 +132,24 @@ body {
     font-size: 25px;
     transform: rotate(-90deg);
 }
+
+
+/* About Us */
+/* .container_two-text {
+  width: 592px;
+  height: 428px;
+} */
+
+/* CT BLOCK */
+.one {
+  border: #000 1px solid;
+  height: 416px;
+}
+.two {
+  border: #000 1px solid;
+  height: 416px;
+}
+.three {
+  border: #000 1px solid;
+  height: 416px;
+}

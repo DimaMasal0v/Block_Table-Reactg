@@ -1,17 +1,14 @@
 import React from "react";
-import './index.css';
-import './App.css';
-import header from './json/header.json';
 
-let Title = () => (
+const Title = (props) => (
     <section>
         <div className="flex justify-center">
-            <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min">
-                {header.title}
+            <h1 className="font-bold uppercase text-3xl text-center mb-1 min-w-min">
+                {props.title}
             </h1>
         </div>
-        <p class="text-center mb-1">
-            {header.subtitle}
+        <p className="text-center mb-1">
+            {props.subtitle}
         </p>
     </section>
 );

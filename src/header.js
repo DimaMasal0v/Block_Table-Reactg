@@ -6,7 +6,7 @@ const Header = () => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-    };
+    }
 
     const closeMenu = () => {
         setIsMenuOpen(false);

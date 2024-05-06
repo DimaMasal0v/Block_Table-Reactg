@@ -15,6 +15,13 @@ import services from './json/text__block.json';
 
 
 const App = () => {
+  // Создаем массив объектов для блоков
+  const blocks = [
+    { title: services.services.title1, description: services.services.description1 },
+    { title: services.services.title2, description: services.services.description2 },
+    { title: services.services.title3, description: services.services.description3 }
+  ];
+
   return (
     <>
       <Header />
@@ -22,14 +29,14 @@ const App = () => {
       <Awards 
         title={awards.awardsSection.title}
         imgSrc1={awards.awardsSection.imgSrc1}
-        text1={awards.awardsSection.text1}
-        text2={awards.awardsSection.text2}
-        text3={awards.awardsSection.text3}
-        text4={awards.awardsSection.text4}
+        textOne={awards.awardsSection.text1}
+        textTwo={awards.awardsSection.text2}
+        textThree={awards.awardsSection.text3}
+        textFour={awards.awardsSection.text4}
       />
       <AboutUs 
-        aboutustitle={about.aboutUs.title}
-        aboutussubtitle={about.aboutUs.subtitle}
+        aboutUsTitle={about.aboutUs.title}
+        aboutUsSubtitle={about.aboutUs.subtitle}
         description={about.aboutUs.description}
         clientsPercentage={text__clients.statistics.clientsPercentage.text}
         clientsText={text__clients.statistics.clientsText.text}
@@ -38,11 +45,9 @@ const App = () => {
         projectsCompleted={text__clients.statistics.projectsCompleted.text}
         projectsText={text__clients.statistics.projectsText.text}
       />
-      <Block id={services.services.id} />
+      <Block blocks={blocks} />
     </>
   );
 }
 
 export default App;
-
-

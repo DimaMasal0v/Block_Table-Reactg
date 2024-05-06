@@ -1,14 +1,11 @@
 {
   "services": {
-    "id1": "architecturalInteriorDesign",
     "title1": "Architectural & Interior design",
     "description1": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
     "imageSr1c": "./svg/Service Icon.svg",
-    "id2": "buildingRenovation",
     "title2": "Building Renovation",
     "description2": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
     "imageSrc2": "./svg/Service Icon (1).svg",
-    "id3": "constructionManagement",
     "title3": "Construction Management",
     "description3": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
     "imageSrc3": "./svg/Service Icon (2).svg"

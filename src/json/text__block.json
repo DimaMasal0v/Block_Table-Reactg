@@ -1,13 +1,13 @@
 {
   "services": {
-    "title1": "Architectural & Interior design",
-    "description1": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
-    "imageSr1c": "./svg/Service Icon.svg",
-    "title2": "Building Renovation",
-    "description2": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
-    "imageSrc2": "./svg/Service Icon (1).svg",
-    "title3": "Construction Management",
-    "description3": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
-    "imageSrc3": "./svg/Service Icon (2).svg"
+    "titleArc": "Architectural & Interior design",
+    "descriptionArc": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
+    "imageSrcArc": "./svg/Service Icon.svg",
+    "titleBuild": "Building Renovation",
+    "descriptionBuild": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
+    "imageSrcBuild": "./svg/Service Icon (1).svg",
+    "titleConstruct": "Construction Management",
+    "descriptionConstruct": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
+    "imageSrcConstruct": "./svg/Service Icon (2).svg"
   }
 }

@@ -17,9 +17,9 @@ import services from './json/text__block.json';
 const App = () => {
   // Создаем массив объектов для блоков
   const blocks = [
-    { title: services.services.title1, description: services.services.description1 },
-    { title: services.services.title2, description: services.services.description2 },
-    { title: services.services.title3, description: services.services.description3 }
+    { title: services.services.titleArc, description: services.services.descriptionArc },
+    { title: services.services.titleBuild, description: services.services.descriptionBuild },
+    { title: services.services.titleConstruct, description: services.services.descriptionConstruct }
   ];
 
   return (
@@ -28,11 +28,11 @@ const App = () => {
       <Title title={header.title} subtitle={header.subtitle} />
       <Awards 
         title={awards.awardsSection.title}
-        imgSrc1={awards.awardsSection.imgSrc1}
-        textOne={awards.awardsSection.text1}
-        textTwo={awards.awardsSection.text2}
-        textThree={awards.awardsSection.text3}
-        textFour={awards.awardsSection.text4}
+        imgSrcGerman={awards.awardsSection.imgSrcGerman}
+        textGerman={awards.awardsSection.textGerman}
+        textGold={awards.awardsSection.textGold}
+        textDesign={awards.awardsSection.textDesign}
+        textGood={awards.awardsSection.textGood}
       />
       <AboutUs 
         aboutUsTitle={about.aboutUs.title}

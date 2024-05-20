@@ -5,6 +5,7 @@ import Title from './header-title.js';
 import Awards from './awards.js';
 import AboutUs from './About-us.js';
 import Block from './Block.js';
+import CFBlock from './CFBlock.js';
 
 // JSON
 import header from './json/header'; 
@@ -12,10 +13,9 @@ import about from './json/text__about__us';
 import awards from './json/awards';
 import text__clients from './json/text__clients.json';
 import services from './json/text__block.json'; 
-
+import recent from './json/text__recent.json';
 
 const App = () => {
-  // Создаем массив объектов для блоков
   const blocks = [
     { title: services.services.titleArc, description: services.services.descriptionArc },
     { title: services.services.titleBuild, description: services.services.descriptionBuild },
@@ -46,6 +46,7 @@ const App = () => {
         projectsText={text__clients.statistics.projectsText.text}
       />
       <Block blocks={blocks} />
+      <CFBlock recentWorks={recent.recentWorks} />
     </>
   );
 }

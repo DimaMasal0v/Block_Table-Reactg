@@ -10,29 +10,30 @@ import CFBlock from './CFBlock.js';
 // JSON
 import header from './json/header'; 
 import about from './json/text__about__us';
-import awards from './json/awards';
+import awardsData from './json/awards.json'; 
 import text__clients from './json/text__clients.json';
 import services from './json/text__block.json'; 
 import recent from './json/text__recent.json';
 
 const App = () => {
   const blocks = [
-    { title: services.services.titleArc, description: services.services.descriptionArc },
-    { title: services.services.titleBuild, description: services.services.descriptionBuild },
-    { title: services.services.titleConstruct, description: services.services.descriptionConstruct }
+    { title: services.services.titleArc, description: services.services.descriptionArc,img:services.services.imageSrcArc },
+    { title: services.services.titleBuild, description: services.services.descriptionBuild,img:services.services.imageSrcBuild },
+    { title: services.services.titleConstruct, description: services.services.descriptionConstruct,img:services.services.imageSrcConstruct }
   ];
-
+  const awardsList = [ 
+    {img: awardsData.awardsSection.imgSrcGerman, text: awardsData.awardsSection.textGerman},
+    {img: awardsData.awardsSection.imgSrcGold, text: awardsData.awardsSection.textGold},
+    {img: awardsData.awardsSection.imgSrcDesign, text: awardsData.awardsSection.textDesign},
+    {img: awardsData.awardsSection.imgSrcGood, text: awardsData.awardsSection.textGood}
+  ]
   return (
     <>
       <Header />
       <Title title={header.title} subtitle={header.subtitle} />
       <Awards 
-        title={awards.awardsSection.title}
-        imgSrcGerman={awards.awardsSection.imgSrcGerman}
-        textGerman={awards.awardsSection.textGerman}
-        textGold={awards.awardsSection.textGold}
-        textDesign={awards.awardsSection.textDesign}
-        textGood={awards.awardsSection.textGood}
+        title={awardsData.awardsSection.title}
+        awards={awardsList}
       />
       <AboutUs 
         aboutUsTitle={about.aboutUs.title}

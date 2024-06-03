@@ -1,12 +1,6 @@
 import React from "react";
-// import germanDesignAward from './svg/german-design-award.svg';
-import aDesignAward from './svg/a-design-award.svg';
-import ifDesignAward from './svg/if-design-award.svg';
-import goodDesignAward from './svg/good-design-award.svg';
 
-const Awards = (props) => {
-    const { title, textGerman, textGold, textDesign, textGood, imgSrcGerman } = props;
-
+const Awards = ({ title, awards }) => {
     return (
         <section>
             <div className="bg-gray-400 sm:h-32 h-72 mb-10 grid sm:grid-cols-12 grid-cols-4 gap-4 sm:gap-8 relative">
@@ -16,42 +10,18 @@ const Awards = (props) => {
                     </p>
                 </div>
                 <div className="svg flex justify-center absolute left-36 sm:mt-6 xl:flex-no-wrap flex-col xl:grid grid-flow-col" id="awards-container">
-                    {imgSrcGerman && (
-                        <div className="sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3">
-                            <img className="mr-3" src={imgSrcGerman} alt="German Design Award" />
+                    {awards.map(({ img, text }, index) => (
+                        <div key={index} className="sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3">
+                            <img className="mr-3" src={img} alt={`Award ${index + 1}`} />
                             <span className="sm:text-sm text-xs font-normal text-white mt-3">
-                                {textGerman}
+                                {text}
                             </span>
                         </div>
-                    )}
-                    {textGold && (
-                        <div className="sm:mr-8 sm:ml-0 -ml-20 flex justify-start">
-                            <img className="mr-3" src={aDesignAward} alt="" />
-                            <span className="sm:text-sm text-xs font-normal text-white mt-5">
-                                {textGold}
-                            </span>
-                        </div>
-                    )}
-                    {textDesign && (
-                        <div className="sm:mr-8 sm:ml-0 -ml-20 flex justify-start">
-                            <img className="mr-3" src={ifDesignAward} alt="" />
-                            <span className="sm:text-sm text-xs font-normal text-white mt-5">
-                                {textDesign}
-                            </span>
-                        </div>
-                    )}
-                    {textGood && (
-                        <div className="sm:mr-8 sm:ml-0 -ml-20 flex justify-start">
-                            <img className="mr-3" src={goodDesignAward} alt="" />
-                            <span className="sm:text-sm text-xs font-normal text-white mt-5">
-                                {textGood}
-                            </span>
-                        </div>
-                    )}
+                    ))}
                 </div>
             </div>
         </section>
-    )
+    );
 };
 
 export default Awards;

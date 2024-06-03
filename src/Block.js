@@ -45,22 +45,21 @@
 // export default Block;
 import React from "react";
 import './App.css';
-import ImgOne from './svg/ServiceIcon(1).svg';
-import ImgTwo from './svg/ServiceIcon(2).svg';
-import ImgThree from './svg/ServiceIcon.svg';
+// import ImgOne from './svg/ServiceIcon(1).svg';
+// import ImgTwo from './svg/ServiceIcon(2).svg';
+// import ImgThree from './svg/ServiceIcon.svg';
 
 const Block = (props) => {
     const { blocks } = props;
-    const images = [ImgOne, ImgTwo, ImgThree];
 
     return (
         <div className="flex justify-center pb-5 min-w-0 xl:flex-no-wrap flex-col relative text-black">
             <div className="grid sm:grid-cols-3 grid-cols-1 grid-rows-1 sm:grid-rows-3 sm:gap-5">
-                {blocks.map((block, index) => {
-                    const { title, description } = block;
+                {blocks.map((block) => {
+                    const { title, description, img } = block;
                     return (
-                        <div key={index} className="one mb-5">
-                            <img className="pl-5 pt-5" src={images[index]} alt="" />
+                        <div className="one mb-5">
+                            <img className="pl-5 pt-5" src={img} alt="" />
                             <h2 className="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">
                                 {title}
                             </h2>

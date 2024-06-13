@@ -54,7 +54,7 @@ const Block = (props) => {
 
     return (
         <div className="flex justify-center pb-5 min-w-0 xl:flex-no-wrap flex-col relative text-black">
-            <div className="grid sm:grid-cols-3 grid-cols-1 grid-rows-1 sm:grid-rows-3 sm:gap-5">
+            <div className="grid sm:grid-cols-3 grid-cols-1 grid-rows-1 sm:gap-5">
                 {blocks.map((block) => {
                     const { title, description, img } = block;
                     return (

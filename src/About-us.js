@@ -1,9 +1,9 @@
     import React from "react";
-    import Img from '../src/svg/Image.svg';
-    import ImgTwo from '../src/svg/Image (1).svg';
+    // import Img from '../src/svg/Image.svg';
+    // import ImgTwo from '../src/svg/Image (1).svg';
 
     const AboutUs = (props) =>  {
-    const { aboutUsTitle, subtitle,description,clientsPercentage,clientsText,employeesNumber,employeesText,projectsCompleted,projectsText } = props; // Деструктурируем props
+    const { aboutUsTitle, subtitle,description,clientsPercentage,clientsText,employeesNumber,employeesText,projectsCompleted,projectsText,aboutusImgOne,aboutusImgTwo } = props; // Деструктурируем props
     return (
         <section class="relative sm:mb-0 mb-10">
             <div
@@ -26,12 +26,12 @@
                 <div class="flex justify-between sm:gap-5 sm:mr-32">
                     <img
                         class="sm:mb-10 sm:w-64 sm:h-96 w-32 h-60"
-                        src={Img}
+                        src={aboutusImgOne}
                         alt=""
                     />
                     <img
                         class="mt-15 sm:w-64 sm:h-96 w-32 h-60"
-                        src={ImgTwo}
+                        src={aboutusImgTwo}
                         alt=""
                     />
                 </div>
@@ -39,11 +39,11 @@
             <div className="sm:mb-5 hidden sm:block relative">
                 <div className="sm:flex justify-center">
                     <span className="xl:text-6xl sm:text-xs sm:flex">{clientsPercentage}</span>
-                    <span className="text-sm pt-2 sm:flex">{clientsText}</span>
+                    <span className="text-sm pt-6 pl-2 sm:flex">{clientsText}</span>
                     <span className="xl:text-6xl sm:text-xs sm:flex">{employeesNumber}</span>
-                    <span className="text-sm pt-2 sm:flex">{employeesText}</span>
+                    <span className="text-sm pt-6 pl-2 sm:flex">{employeesText}</span>
                     <span className="xl:text-6xl sm:text-xs sm:flex">{projectsCompleted}</span>
-                    <span className="text-sm pt-2 sm:flex">{projectsText}</span>
+                    <span className="text-sm pt-6 pl-2 sm:flex">{projectsText}</span>
                 </div>
             </div>
         </section>

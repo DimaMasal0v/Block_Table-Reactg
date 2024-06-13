@@ -8,7 +8,7 @@ const CFBlock = ({ recentWorks }) => {
 
     return (
         <section className="relative">
-            <div className="sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none">
+            <div className="grid sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none">
                 <div id="container-grid">
                     <h5 className="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl">
                         {title}
@@ -17,7 +17,7 @@ const CFBlock = ({ recentWorks }) => {
                         {subtitle}
                     </h6>
                     {leftImages.map((image, index) => (
-                        <img key={index} id={image.id} className="" src={image.src} alt={image.alt} />
+                        <img key={index} className="" src={image.src} alt={image.alt} />
                     ))}
                     {leftProjects.map((project, index) => (
                         <React.Fragment key={index}>
@@ -35,7 +35,7 @@ const CFBlock = ({ recentWorks }) => {
                 <div id="recent-works-right">
                     {rightImages.map((image, index) => (
                         <React.Fragment key={index}>
-                            <img id={image.id} className="" src={image.src} alt={image.alt} />
+                            <img  className="" src={image.src} alt={image.alt} />
                             <h4 className="sm:text-4xl sm:font-normal text-2xl italic" id="hotel-title">
                                 {rightProjects[index].title}
                             </h4>

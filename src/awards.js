@@ -3,9 +3,9 @@ import React from "react";
 const Awards = ({ title, awards }) => {
     return (
         <section>
-            <div className="bg-gray-400 sm:h-32 h-72 mb-10 grid sm:grid-cols-12 grid-cols-4 gap-4 sm:gap-8 relative">
+            <div className="bg-gray-400 sm:h-32 h-96 mb-20 grid sm:grid-cols-12 grid-cols-4 gap-4 sm:gap-8 relative">
                 <div>
-                    <p className="select-text text-white bottom-10 top-25 sm:left-10 absolute">
+                    <p className="select-text text-white top-48 sm:left-10 absolute">
                         {title}
                     </p>
                 </div>
@@ -13,7 +13,7 @@ const Awards = ({ title, awards }) => {
                     {awards.map(({ img, text }, index) => (
                         <div key={index} className="sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3">
                             <img className="mr-3" src={img} alt={`Award ${index + 1}`} />
-                            <span className="sm:text-sm text-xs font-normal text-white mt-3">
+                            <span className="sm:text-sm text-xs font-normal text-white pt-6">
                                 {text}
                             </span>
                         </div>

@@ -6,6 +6,7 @@ import Awards from './awards.js';
 import AboutUs from './About-us.js';
 import Block from './Block.js';
 import CFBlock from './CFBlock.js';
+import Footer from './footer.js';
 
 // JSON
 import header from './json/header'; 
@@ -14,6 +15,7 @@ import awardsData from './json/awards.json';
 import text__clients from './json/text__clients.json';
 import services from './json/text__block.json'; 
 import recent from './json/text__recent.json';
+import footerData from './json/footer.json';
 
 const App = () => {
   const blocks = [
@@ -39,6 +41,8 @@ const App = () => {
         aboutUsTitle={about.aboutUs.title}
         aboutUsSubtitle={about.aboutUs.subtitle}
         description={about.aboutUs.description}
+        aboutusImgOne={about.aboutUs.aboutus__img}
+        aboutusImgTwo={about.aboutUs.aboutus__img1}
         clientsPercentage={text__clients.statistics.clientsPercentage.text}
         clientsText={text__clients.statistics.clientsText.text}
         employeesNumber={text__clients.statistics.employeesNumber.text}
@@ -48,6 +52,19 @@ const App = () => {
       />
       <Block blocks={blocks} />
       <CFBlock recentWorks={recent.recentWorks} />
+      <div class="container_two-line mt-10"></div>
+      <Footer 
+                title={footerData.footer.title}
+                sendHi={footerData.footer.sendHi}
+                location={footerData.footer.location}
+                emailLabel={footerData.footer.emailLabel}
+                email={footerData.footer.email}
+                phoneLabel={footerData.footer.phoneLabel}
+                phone={footerData.footer.phone}
+                copyright={footerData.footer.copyright}
+                connectLabel={footerData.footer.connectLabel}
+                socialIcons={footerData.footer.socialIcons}
+            />
     </>
   );
 }

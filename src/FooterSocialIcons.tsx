@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
-const FooterSocialIcons = ({ connectLabel, socialIcons }) => {
+
+interface FooterSocialIconsProps {
+    connectLabel: string;
+    socialIcons: string[];
+}
+
+const FooterSocialIcons: React.FC<FooterSocialIconsProps> = ({ connectLabel, socialIcons }) => {
     return (
         <div className="desktop-right-section sm:flex hidden">
             <div className="desktop-eyebrow">
@@ -17,3 +23,4 @@ const FooterSocialIcons = ({ connectLabel, socialIcons }) => {
 };
 
 export default FooterSocialIcons;
+

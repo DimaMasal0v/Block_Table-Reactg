@@ -1,29 +1,39 @@
 {
-  "awardsSection": {
+  "awards": {
     "title": "Награды",
-    "containerIdGerman": "award-container-1",
-    "imgIdGerman": "award-img-1",
-    "textIdGerman": "award-text-1",
-    "imgSrcGerman": "https://previews.dropbox.com/p/thumb/ACShp53uOT8_jZQc3ztZVbSKvzRmNLyeTKLXhZMPeXXCAAbGHoCa4kZxBors1l3julDL62fcajSYMRh01YEqPqHJrxics4fb1GSZr-YqLiCPNOOjY7dqXvb5vfSGnDyu3KZUDRg6khCp0UBPVZMT2lApmjBQT8g1UcSY2Smkl2u_NsUHMX_Sey6_yO6b9AWMRhsfjXuQj81W7tZCJYZcFXFfbOdrPB83jbPZeU4sCxCbz3bbXRkgZUjZ2daQZk27KR_xL6pA-3WtsaKa8VG9G-RL95yDsN_uPyf7sNnN44XVWT-m09cDlhU9RkpQPrIb4vK18o8MZB8wxgyCvn2-4Hcp6Na2Rx2IwIatn4QRkE3HJwxcJjXD7q3XGG0Mr4UORew/p.png",
-    "imgAltGerman": "German Design Award",
-    "textGerman": "German Design Award<br />2021",
-    "containerIdGold": "award-container-2",
-    "imgIdGold": "award-img-2",
-    "textIdGold": "award-text-2",
-    "imgSrcGold": "https://previews.dropbox.com/p/thumb/ACQe0djG8mvhXlbdLq9NB3GAc9IBOq7SyUIw7hw_vYk0NrLQXVhQGJwkSNgPDmhweOAcDcRSmGEKnYdNHOe067uyay6OorvpKBm0bs37p3q3MZxZii3zG2OfTG1wSpefUEPgGjGEnc8w5Fz7vAqvpdMdbcuDbgpLdYXjfz1rc62FEHwU36A7_WVPR2Z0rjoIsEjYEzeIzxWs27BsTdrIQQIVShKnPt1Ru_AW1xAHd3C7Izf_S9JBb119M33aa-n-HjcQzzzGMiuF0USyBYjz4zGxhjyutUaAtSQni-0xIuB0yPZBmTBM7L-9lHQySSBaJWeiV1qYlLTXRXVgTsP_BLW50cYE6I2KvZv6wGaTkV52JzzxV8KvKu9-C6c6wruSo2k/p.png",
-    "imgAltGold": "Gold A’ Design Award",
-    "textGold": "Gold A’ Design Award<br />2021",
-    "containerIdDesign": "award-container-3",
-    "imgIdDesign": "award-img-3",
-    "textIdDesign": "award-text-3",
-    "imgSrcDesign": "https://previews.dropbox.com/p/thumb/ACTUQQZKg7O5Gf3Vest68mI4RlF1QqpcF8V8jo1p98jM8Ad2n8HA4ZoRWomw0hvNFoOqfWjtaEu6cEYGshpFSJvT_49iOoBkQLgVXN8NerD4qwEeHNQF-zvD_BjrkaFeyi4thW0gMnvj9-tZSNBq8SyR9pBeCh9JfdWu7i7VivOt2dfTFl9HUm7GlsoH0XLze_hyIJponW9p2rCN18cGZs-4Plbxmm74pUwhUo6ccLzOj5JtI67Bn_RH6TIJrkx2XG7abMXLjSWL78dWgqhfYr5kQgpKMBIcvY6mnuBJ-AqcX_uKoqJXzNeGan0wGSbHC5aVlIYiA4xmGegOXh48h1ZXeltWDeIrgaLJioRp3rEvFhtIO5oLQplDUgFVuMvN2qU/p.png",
-    "imgAltDesign": "IF Design Award",
-    "textDesign": "IF Design Award<br />2020",
-    "containerIdGood": "award-container-4",
-    "imgIdGood": "award-img-4",
-    "textIdGood": "award-text-4",
-    "imgSrcGood": "https://previews.dropbox.com/p/thumb/ACSlg0rNjjk8NjwAaZon9AhzXLbBLmDIHeWIqWnY9nQNtZWHHivrAuskHyqgLF8TClySSXjZi62krRaZ5dlxFWrdHJatWi8TV7aUH_e_KT-SvtGYEnIW3RQq67X-ElNY4QFWavgtjNN0UokL9TMfo9l3qlZYIHw_JmWCzqfncPVxjA1wg7-0YvIRsB7XtuaUmQqRQE83VWo17oa1ePowW4maXBgKvUTCAAuVqjByTQ1uoHI-Bl1T9Q9RMlyW2Lb80-D-Y8Ktywf26sv8v49VIb31hqJEnX381q3dUVGr6W_Y_6QY1_fB43v_qmiZTgD2vRY4CGEBYi9HW6ZpfGpkC3MPOs02rBlduVzcjOL6pXMRPAhyh68Bp5u4H-3sMsEjExQ/p.png",
-    "imgAltGood": "Good Design Award",
-    "textGood": "Good Design Award<br />2019"
+    "list": [
+      {
+        "containerId": "award-container-1",
+        "imgId": "award-img-1",
+        "textId": "award-text-1",
+        "imgSrc": "https://previews.dropbox.com/p/thumb/ACU9j2NST3-u2CqtB3D1HS5cG3i-M45eEE2jeLGziBHmZjkvufdo9w9jE8oqz6Y-ZKJ1sI2p4XGRw8ovE3Oy6fWkiz_7onqGSSSNzwp5W-aty3oNhKQmItQMhG0nidDxLF-Na02rvFAo3iwYsLjVW-PWm0Vsw-gqGHD_ymkoh5pxT3_Mr5mVRR8V6342QQbqj3lWOXruVXihcgRMrIK1M0gXZWImUuEoeMtA1-4xdpA-Dsm1sQ2fj7MWiTAEnG7YvBTiOe4iei5tqHwrNv84AQE1t78AV4FED7jQwhrNJM_lJsx2ThtKErqCUs-Y3UEKqGi5RD88EsEi7UGh1G73FgmenTu9JRoPoSVCrpSns8byWKkv9iHj4F67FWGDmkefL1c/p.png",
+        "imgAlt": "German Design Award",
+        "text": "German Design Award<br />2021"
+      },
+      {
+        "containerId": "award-container-2",
+        "imgId": "award-img-2",
+        "textId": "award-text-2",
+        "imgSrc": "https://previews.dropbox.com/p/thumb/ACV_CVOWYTJNeYVF8bpEpElVDWe6RiE9-U-ti3KpxhBqY-9Vja17DAFcsaGHXbxVnD0LVP0MRcTGHQb2cg1-SChEJZ7jZ53r79clIuMKJ1-6vaL6zQ9_viA-D8B8OT4GSKiOCs61jBxvnJAxUY86ZsiNVsBMlFupf1-sfQO-Y6Y8xLBv5mMD8cA0UIFUoWgYROz-ZLP83uf6-DxIQzA8S50a6gg2KtwM_bq91W3drsA5c2gy6yFgfmSpeiCXfApIlLb6aElwWq0uXuafpwxt4-61TeiIIx9ACUAsp5lYsEPO4epyXGPYvYN4H2c7d8KIL3xr_0tOQn8VnYYAWwUk3HE01QmK4qebElVnxINs7m2oh4by17fV4vQ-WaPLEXBE48Q/p.png",
+        "imgAlt": "Gold A’ Design Award",
+        "text": "Gold A’ Design Award<br />2021"
+      },
+      {
+        "containerId": "award-container-3",
+        "imgId": "award-img-3",
+        "textId": "award-text-3",
+        "imgSrc": "https://previews.dropbox.com/p/thumb/ACUGSC8ls8G4gaxrV23Z-HNfoVfYS0DFJwmuBxgdf09ellcL117NYBGi09pCbe9v6fig5ggvdwhyybcUloSZgFFJRWbeyGTXslER0gvi2bFTGAUnNzJh2MTaWZ8WfskhN_oxyJifRuUYl7FiQtFEUhI9TaRUNNF-ZAFWnL83l_kUrd8E1XDeNUZahULQvjDpVqrQGZw41KM1XXUBM_B0fD4C1rPzlZieVak-PFtR4eBj7wYFwts1slA1mIk719AhyYUU64T2Q2w4xKzOWGFdUh5in6sJ0BO5GAp85UJvsq8NowV3o1cmQUBpgvSq8ENXQ8pMxE1N9_lJ_us_5-_EMKzW0GrgQzjoF1aKvzxRJGq0x3MMKEWN4FqQVaGNdCNqCXE/p.png",
+        "imgAlt": "IF Design Award",
+        "text": "IF Design Award<br />2020"
+      },
+      {
+        "containerId": "award-container-4",
+        "imgId": "award-img-4",
+        "textId": "award-text-4",
+        "imgSrc": "https://previews.dropbox.com/p/thumb/ACVwNYacvN1hflUVSVFkWfNppURSGHfPFV_cJ6hRe_lnuXAkisK9oJi3_FexvDA-4S_ZO3m4F7tOtRqZDuNrMUddLJtEy2JZHNuVVeE6EEgvVF_xxRlDUIrvMzhljh3mz4gVkg1o27XdZechdgSBF8G_qkvrzJrx-NMsm3o4f8WZiu7iKUQAkuq_jlXPYu0FlwWv3pqEnBtaq34w3dTXGtF5Ql2r4yJM6faYMQeLPO9LdDlPNROoNEhEomOQBJDrexN4YqjNFp102Q4aRyiG3xq4IsCT8fYwc2RP8PDoXSi3CLwYeb0v_w7S_q2y6T1lmYNBD8jQMYcofRHj4QqtGz8sCThvM5xXraQxj-3DOOk1vu2lTMvmX-MF0Lrog4yUnUQ/p.png",
+        "imgAlt": "Good Design Award",
+        "text": "Good Design Award<br />2019"
+      }
+    ]
   }
 }

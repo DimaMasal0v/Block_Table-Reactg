@@ -1,13 +1,19 @@
 {
-  "services": {
-    "titleArc": "Architectural & Interior design",
-    "descriptionArc": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
-    "imageSrcArc": "https://previews.dropbox.com/p/thumb/ACQxnUiUM7fHE-rsCi_3FJgl9kUxUoNpreoklt0deiGhputQ65GRkSUaewH6VO0aNlgwug2DhdTQpbo--v7xbAvv2U-0FBz5fS-MG1Uj-bCkf6GZZ1QAnlgueIEoQE2TWBkD-yjc7hVLmRNYrxOgGn_jHGlYvU5X8meHN0w6lU-_Zwyg0HtDBoF-yPGQOEXLFpWLKrAZbDvwQyPvTZOHa1c6ruMZ0umdTkGIiEuDOfQLr9Ol_YrNk9UXThHPTKwggsrs5e_u1wAc16iH291mBerKSTpLkDRKnliUZ_wF_9QW_BLXjmJ4e8bJZ4sNB1ESRs6zAoOrh8nC01zcm-Xhpu38ohO5eJvkclorMCrTBlotShUuZoZe7eTXhYGYbfiMo-o/p.png",
-    "titleBuild": "Building Renovation",
-    "descriptionBuild": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
-    "imageSrcBuild": "https://previews.dropbox.com/p/thumb/ACQdWDRAl6oSDeOn5EhrYymjP6DzXviCFxWvo95IyouUiQn7UhWNKVyX9tu8eSSzKMtsnMPvbhCaVrhIU5r1T-pnfR1tz_zFPiObrtLdRvIUjJnvJK595eMUsaYuQWeWj7AtwULhbvsWb-JpxWBVTF0OWYqgNCVrT61rkFfEBG04evFPlwSIUY4mmfneloByc99Icz6GIE5IbblJmlqtn2hgelawqtJ4DH1ShHmUdu2sjxTKVnxeU5mA0jUWFcL_0P4Ndc5kE8vBW-tKkoW_xFDm60f86bXs6ME2MvVuNWpx2qdbB-2C1FT8tAFVpl3r35HGeuL0_Z0vP2ETeCwhg7amB7qwNA4ajqzKYUIv_00bJmvHxOuQL-ai_HI2R2300Bo/p.png",
-    "titleConstruct": "Construction Management",
-    "descriptionConstruct": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
-    "imageSrcConstruct": "https://previews.dropbox.com/p/thumb/ACS2mrecZOz7qc1YvNEc9aRN5YbiLNYuV1ryX1ICGZacIwDOBGmQ6syFoqClipd_rpBFyHeC669vJi9EOU1qDJrVFOcPlbyeUsWCtQ3mOFhwiaBxZPkEVEYltOFdA-hfqBoauSEc8eOMM0Faj0UKxfildnORWSpGKLQbNUdrAGfIkEDLLXABvBm91XLyx4T48iZBdfM9HlT_mFEUigmo26HGm89aNKOjxk1bPi-YTUI9GVGFFa_Q7KvGVuhdRHLkcvi06EeiLl2YY64KZz0vXFtxe3yeCmqvly2blcyd9fVvkwf6szj24Pqp9QpBjWnEfVwTeQJxkVgy9osTyUQ4yAxaIxikzPoxllh6UR5m9VNslFZoB-9XilBPfKA4SZUVWCw/p.png"
-  }
+  "services": [
+    {
+      "title": "Architectural & Interior design",
+      "description": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
+      "imageSrc": "https://previews.dropbox.com/p/thumb/ACXA5F3Ycjup9yqIZYQOIrN25mEdwVufkzBMkRVp8wA6Cktrn2gn2KswSUfMaqS53p6X17z5i10f-Yr3mvwFT3KzJk3GUYJ0oBPUv2dFnhk79kULwHG3HqAiGFMH5T7AreueN9J99SFjTJeomsfEmZrfy_VexrGKdSVGVfYTCDhcUX6nC6wuUzETyr7XYorhIJ8mshvLfkAoCSvsYesVvaqeztFk4LeCEeslDyR4AbrVk0m-g_plYH9XgDsok6OfZShSsGmlo-xQFgm0TtcySmUIRvFAs92bIZXM5pX4_Fh4nEVHEeS_l7ur0fMcWni-iH3rSaI0DUsfKwWhSPulb7ulv6NlxuH3sR1Ki77391ctSTKFC1-ueId6Uocx7HNqaVU/p.png"
+    },
+    {
+      "title": "Building Renovation",
+      "description": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
+      "imageSrc": "https://previews.dropbox.com/p/thumb/ACXziHk4iqTD3WHWrzSlKVZCqWUjMUi8KxwaymhH3x1pHX_wYP_hD-icu36sAEQvNAtjuAhlwTx5h-pCGOXUnp1-jBjdxeDBjrHYWVpnMqq93Pn7SuoZKO5IcYM_PKYF4ZkZZLXO7o5V8tG5dDvRpSdyOhOJ7fCvzMmP8979fUCK8bvK0otKbgXOjuCLZiq12jo2qju5XNPDKbBtgxPi8BrftZTUYZC-mP7h_QmN4rngS1nccOAKi7_EMrQPPY9xBSf8F1I2h5bS9BWdaNpUn5d9eK2WHLY-tnpRORhz1rGajT9L-Awa_28iRRMY83JELTF4DuwlTL3yEceIvdSZpF1jA8LhPsgUBZdpKCyQ0I8w3lMIFb3h_KIb9lZ6r1HTK3o/p.png"
+    },
+    {
+      "title": "Construction Management",
+      "description": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.",
+      "imageSrc": "https://previews.dropbox.com/p/thumb/ACVjAWAi9rQT4vKIeElGxQkBGJy8ElyndsLwX3-QjgANZpjDJH5GQH5GQ9H-OeQTu3U3PSGXmSNvj-_fegX4nJl4_hmfydQjvbiAWC1J_uhmlUZu9LwpJnrnj-gCuYUg7N-2fqHfMgU10EhCoDdflTDS7qK3QSz6gpf1sc38dn2ioA2k-2Tq-nFNvLndTu2WFC33WehPuuYIwqYVk_ace8yut47Z7lBm6k6mjVToFqtnq7FWYjg12ap_wM4x4WYBY8sHnSKsKJWz0KGUvVXcMwHyEan7R0MhPDkzsLy7djwh8LB0TYggYv4phoyQJTpJNq4LK8jCKnmAnehx1N3OLyLo1BVs0F4gTtxgtfOlk34qGgO9HxuoJ2hf8GExWtE0FZo/p.png"
+    }
+  ]
 }

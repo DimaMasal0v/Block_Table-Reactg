@@ -1,9 +1,33 @@
 import React from 'react';
 import './App.css';
-import FooterContact from './FooterContact';
-import FooterSocialIcons from './FooterSocialIcons';
+import FooterContact from './FooterContact.tsx';
+import FooterSocialIcons from './FooterSocialIcons.tsx';
 
-const Footer = ({ title, sendHi, location, emailLabel, email, phoneLabel, phone, copyright, connectLabel, socialIcons }) => {
+interface FooterProps {
+    title: string;
+    sendHi: string;
+    location: string;
+    emailLabel: string;
+    email: string;
+    phoneLabel: string;
+    phone: string;
+    copyright: string;
+    connectLabel: string;
+    socialIcons: { id: string; link: string; icon: string }[];
+}
+
+const Footer: React.FC<FooterProps> = ({
+    title,
+    sendHi,
+    location,
+    emailLabel,
+    email,
+    phoneLabel,
+    phone,
+    copyright,
+    connectLabel,
+    socialIcons
+}) => {
     return (
         <footer className="relative p-0 sm:mt-24 mt-10">
             <div className="flex justify-between">
@@ -33,3 +57,4 @@ const Footer = ({ title, sendHi, location, emailLabel, email, phoneLabel, phone,
 };
 
 export default Footer;
+

@@ -1,6 +1,21 @@
 import React from 'react';
 import './App.css';
-const FooterContact = ({ location, emailLabel, email, phoneLabel, phone }) => {
+
+interface FooterContactProps {
+    location: string;
+    emailLabel: string;
+    email: string;
+    phoneLabel: string;
+    phone: string;
+}
+
+const FooterContact: React.FC<FooterContactProps> = ({
+    location,
+    emailLabel,
+    email,
+    phoneLabel,
+    phone
+}) => {
     return (
         <div className="flex-col text-left sm:text-right">
             <h3 className="text-xl">{location}</h3>

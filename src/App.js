@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Header from "./header.js";
-import Title from "./header-title.js";
-import Awards from "./awards.js";
+import Header from "./header.tsx";
+import Title from "./header-title.tsx";
+import Awards from "./awards.tsx";
 import AboutUs from "./About-us.js";
 import Block from "./Block.tsx";
-import CFBlock from "./CFBlock.js";
-import Footer from "./footer.js";
+import CFBlock from "./CFBlock.tsx";
+import Footer from "./footer.tsx";
 
 // JSON
 import header from "./json/header";
@@ -18,41 +18,20 @@ import recent from "./json/text__recent.json";
 import footerData from "./json/footer.json";
 
 const App = () => {
-  const blocks = [
-    {
-      title: services.services.titleArc,
-      description: services.services.descriptionArc,
-      img: services.services.imageSrcArc,
-    },
-    {
-      title: services.services.titleBuild,
-      description: services.services.descriptionBuild,
-      img: services.services.imageSrcBuild,
-    },
-    {
-      title: services.services.titleConstruct,
-      description: services.services.descriptionConstruct,
-      img: services.services.imageSrcConstruct,
-    },
-  ];
-  const awardsList = [
-    {
-      img: awardsData.awardsSection.imgSrcGerman,
-      text: awardsData.awardsSection.textGerman,
-    },
-    {
-      img: awardsData.awardsSection.imgSrcGold,
-      text: awardsData.awardsSection.textGold,
-    },
-    {
-      img: awardsData.awardsSection.imgSrcDesign,
-      text: awardsData.awardsSection.textDesign,
-    },
-    {
-      img: awardsData.awardsSection.imgSrcGood,
-      text: awardsData.awardsSection.textGood,
-    },
-  ];
+  const blocks = services.services.map((service) => ({
+    title: service.title,
+    description: service.description,
+    img: service.imageSrc,
+  }));
+  const awardsTitle = awardsData.awards.title;
+  const awardsList = awardsData.awards.list.map((award, index) => ({
+    img: award.imgSrc,
+    text: award.text,
+    containerId: award.containerId,
+    imgId: award.imgId,
+    textId: award.textId,
+    imgAlt: award.imgAlt,
+  }));
   const aboutUsImages = [
     { src: about.aboutUs.aboutus__img, alt: "About Us Image 1" },
     { src: about.aboutUs.aboutus__img1, alt: "About Us Image 2" },
@@ -67,7 +46,7 @@ const App = () => {
     <>
       <Header />
       <Title title={header.title} subtitle={header.subtitle} />
-      <Awards title={awardsData.awardsSection.title} awards={awardsList} />
+      <Awards title={awardsTitle} awards={awardsList} />
       <AboutUs
         aboutUsTitle={about.aboutUs.title}
         aboutUsSubtitle={about.aboutUs.subtitle}

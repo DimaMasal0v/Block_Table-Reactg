@@ -1,8 +1,21 @@
 import React from "react";
 
-const AboutUs = (props) => {
-  const { aboutUsTitle, aboutUsSubtitle, description, images, statistics } = props;
+// Определение типов для пропсов
+interface AboutUsProps {
+  aboutUsTitle: string;
+  aboutUsSubtitle: string;
+  description: string;
+  images: { src: string; alt: string }[];
+  statistics: { value: string; text: string }[];
+}
 
+const AboutUs: React.FC<AboutUsProps> = ({
+  aboutUsTitle,
+  aboutUsSubtitle,
+  description,
+  images,
+  statistics
+}) => {
   return (
     <section className="relative sm:mb-0 mb-10">
       <div className="sm:flex justify-between sm:px-28">
@@ -17,7 +30,12 @@ const AboutUs = (props) => {
         </div>
         <div className="flex justify-between sm:gap-5 sm:mr-32">
           {images.map((image, index) => (
-            <img key={index} className="sm:mb-10 sm:w-64 sm:h-96 w-32 h-60" src={image.src} alt={image.alt} />
+            <img
+              key={index}
+              className="sm:mb-10 sm:w-64 sm:h-96 w-32 h-60"
+              src={image.src}
+              alt={image.alt}
+            />
           ))}
         </div>
       </div>
@@ -25,7 +43,9 @@ const AboutUs = (props) => {
         <div className="sm:flex justify-center">
           {statistics.map((stat, index) => (
             <React.Fragment key={index}>
-              <span className="xl:text-6xl sm:text-xs sm:flex">{stat.value}</span>
+              <span className="xl:text-6xl sm:text-xs sm:flex">
+                {stat.value}
+              </span>
               <span className="text-sm pt-6 pl-2 sm:flex">{stat.text}</span>
             </React.Fragment>
           ))}

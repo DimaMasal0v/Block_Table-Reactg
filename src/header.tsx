@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import Logo from '../src/svg/trace.svg';
 
-const Header: React.FC = () => {
+// Определение типов для пропсов
+interface HeaderProps {
+    logo: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ logo }) => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
     const toggleMenu = () => {
@@ -15,7 +19,7 @@ const Header: React.FC = () => {
     return (
         <header className="text-white bg-gray-400 relative">
             <div className="flex justify-between items-center px-4">
-                <img alt="Logo" src={Logo} className="" />
+                <img alt="Logo" src={logo} className="" />
                 <div className="menu__container">
                     <div className="menu__mobile-btn" id="menuBtn" onClick={toggleMenu}>
                         <div className="menu__burger"></div>

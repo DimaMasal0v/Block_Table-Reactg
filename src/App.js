@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./header.tsx";
 import Title from "./header-title.tsx";
 import Awards from "./awards.tsx";
-import AboutUs from "./About-us.js";
+import AboutUs from "./About-us.tsx";
 import Block from "./Block.tsx";
 import CFBlock from "./CFBlock.tsx";
 import Footer from "./footer.tsx";
@@ -16,6 +16,7 @@ import text__clients from "./json/text__clients.json";
 import services from "./json/text__block.json";
 import recent from "./json/text__recent.json";
 import footerData from "./json/footer.json";
+
 
 const App = () => {
   const blocks = services.services.map((service) => ({
@@ -44,7 +45,7 @@ const App = () => {
   ];
   return (
     <>
-      <Header />
+      <Header logo={header.logo}/>
       <Title title={header.title} subtitle={header.subtitle} />
       <Awards title={awardsTitle} awards={awardsList} />
       <AboutUs

@@ -21,7 +21,6 @@ const Awards: React.FC<AwardsProps> = ({ title, awards }) => {
         </div>
         <div
           className="svg flex justify-center absolute left-36 sm:mt-6 xl:flex-no-wrap flex-col xl:grid grid-flow-col"
-          id="awards-container"
         >
           {awards.map(({ img, text }, index) => (
             <div

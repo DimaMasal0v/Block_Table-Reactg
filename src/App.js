@@ -19,30 +19,33 @@ import footerData from "./json/footer.json";
 
 
 const App = () => {
-  const blocks = services.services.map((service) => ({
+
+  const blocks = services.services.map(service => ({
+    id: service.id, // Уникальный идентификатор
     title: service.title,
     description: service.description,
     img: service.imageSrc,
   }));
+  
+
   const awardsTitle = awardsData.awards.title;
-  const awardsList = awardsData.awards.list.map((award, index) => ({
+  const awardsList = awardsData.awards.list.map(award => ({
     img: award.imgSrc,
     text: award.text,
-    containerId: award.containerId,
-    imgId: award.imgId,
-    textId: award.textId,
-    imgAlt: award.imgAlt,
+    containerId: award.containerId,  // Уникальный идентификатор
   }));
-  const aboutUsImages = [
-    { src: about.aboutUs.aboutus__img, alt: "About Us Image 1" },
-    { src: about.aboutUs.aboutus__img1, alt: "About Us Image 2" },
-  ];
 
-  const aboutUsStatistics = [
-    { value: text__clients.statistics.clientsPercentage.text, text: text__clients.statistics.clientsText.text },
-    { value: text__clients.statistics.employeesNumber.text, text: text__clients.statistics.employeesText.text },
-    { value: text__clients.statistics.projectsCompleted.text, text: text__clients.statistics.projectsText.text },
+  const aboutUsImages = [
+    { src: about.aboutUs.aboutus__img, alt: "About Us Image 1", id: "aboutUsImage1" },
+    { src: about.aboutUs.aboutus__img1, alt: "About Us Image 2", id: "aboutUsImage2" },
   ];
+  
+  const aboutUsStatistics = [
+    { value: text__clients.statistics.clientsPercentage.text, text: text__clients.statistics.clientsText.text, id: "clientsPercentage" },
+    { value: text__clients.statistics.employeesNumber.text, text: text__clients.statistics.employeesText.text, id: "employeesNumber" },
+    { value: text__clients.statistics.projectsCompleted.text, text: text__clients.statistics.projectsText.text, id: "projectsCompleted" },
+  ];  
+
   return (
     <>
       <Header logo={header.logo}/>

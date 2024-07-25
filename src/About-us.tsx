@@ -5,8 +5,9 @@ interface AboutUsProps {
   aboutUsTitle: string;
   aboutUsSubtitle: string;
   description: string;
-  images: { src: string; alt: string }[];
-  statistics: { value: string; text: string }[];
+  // Добавляем id
+  images: { src: string; alt: string; id: string }[]; 
+  statistics: { value: string; text: string; id: string }[];
 }
 
 const AboutUs: React.FC<AboutUsProps> = ({
@@ -29,9 +30,10 @@ const AboutUs: React.FC<AboutUsProps> = ({
           <span className="">{description}</span>
         </div>
         <div className="flex justify-between sm:gap-5 sm:mr-32">
-          {images.map((image, index) => (
+          {images.map((image) => (
+            // Используем id в качестве ключа
             <img
-              key={index}
+              key={image.id}  
               className="sm:mb-10 sm:w-64 sm:h-96 w-32 h-60"
               src={image.src}
               alt={image.alt}
@@ -41,8 +43,9 @@ const AboutUs: React.FC<AboutUsProps> = ({
       </div>
       <div className="sm:mb-5 hidden sm:block relative">
         <div className="sm:flex justify-center">
-          {statistics.map((stat, index) => (
-            <React.Fragment key={index}>
+          {statistics.map((stat) => (
+            // Используем id в качестве ключа
+            <React.Fragment key={stat.id}> 
               <span className="xl:text-6xl sm:text-xs sm:flex">
                 {stat.value}
               </span>

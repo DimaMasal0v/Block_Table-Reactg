@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import './App.css';
 
 interface BlockProps {
   blocks: {
+    id: string; // Уникальный идентификатор
     title: string;
     description: string;
     img: string;
@@ -10,11 +11,13 @@ interface BlockProps {
 }
 
 const Block: React.FC<BlockProps> = ({ blocks }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className="flex justify-center pb-5 min-w-0 xl:flex-no-wrap flex-col relative text-black">
+    <div ref={containerRef} className="flex justify-center pb-5 min-w-0 xl:flex-no-wrap flex-col relative text-black">
       <div className="grid sm:grid-cols-3 grid-cols-1 grid-rows-1 sm:gap-5">
-        {blocks.map(({ title, description, img }, index) => (
-          <div className="one mb-5" key={index}>
+        {blocks.map(({ id, title, description, img }) => (
+          <div className="one mb-5" key={id}>
             <img className="pl-5 pt-5" src={img} alt={title} />
             <h2 className="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">
               {title}
@@ -30,3 +33,5 @@ const Block: React.FC<BlockProps> = ({ blocks }) => {
 }
 
 export default Block;
+
+

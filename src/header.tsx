@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
     return (
         <header className="text-white bg-gray-400 relative">
             <div className="flex justify-between items-center px-4">
-                <img alt="Logo" src={logo} className="" />
+                <img alt="Logo" src={logo} />
                 <div className="menu__container">
                     <div className="menu__mobile-btn" id="menuBtn" onClick={toggleMenu}>
                         <div className="menu__burger"></div>

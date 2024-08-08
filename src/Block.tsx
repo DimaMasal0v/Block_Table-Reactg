@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import './App.css';
 
 interface BlockProps {
@@ -11,10 +11,10 @@ interface BlockProps {
 }
 
 const Block: React.FC<BlockProps> = ({ blocks }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  // const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div ref={containerRef} className="flex justify-center pb-5 min-w-0 xl:flex-no-wrap flex-col relative text-black">
+    <div className="flex justify-center pb-5 min-w-0 xl:flex-no-wrap flex-col relative text-black">
       <div className="grid sm:grid-cols-3 grid-cols-1 grid-rows-1 sm:gap-5">
         {blocks.map(({ id, title, description, img }) => (
           <div className="one mb-5" key={id}>

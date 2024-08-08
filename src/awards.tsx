@@ -11,6 +11,8 @@ interface AwardsProps {
   awards: Award[];
 }
 
+
+
 const Awards: React.FC<AwardsProps> = ({ title, awards }) => {
   return (
     <section>

@@ -49,11 +49,11 @@ const CFBlock: React.FC<CFBlockProps> = ({ recentWorks }) => {
           <h6 className="sm:text-6xl sm:normal italic font-normal text-3xl">
             {subtitle}
           </h6>
-          {leftImages.map((image, index) => (
-            <img key={index} className="" src={image.src} alt={image.alt} />
+          {leftImages.map((image, containerId) => (
+            <img key={containerId} className="" src={image.src} alt={image.alt} />
           ))}
-          {leftProjects.map((project, index) => (
-            <React.Fragment key={index}>
+          {leftProjects.map((project, containerId) => (
+            <React.Fragment key={containerId}>
               <h4 className="sm:text-4xl sm:font-normal text-2xl italic mt-6">
                 {project.title}
               </h4>
@@ -66,13 +66,13 @@ const CFBlock: React.FC<CFBlockProps> = ({ recentWorks }) => {
           </button>
         </div>
         <div id="recent-works-right">
-          {rightImages.map((image, index) => (
-            <React.Fragment key={index}>
+          {rightImages.map((image, containerId) => (
+            <React.Fragment key={containerId}>
               <img className="" src={image.src} alt={image.alt} />
               <h4 className="sm:text-4xl sm:font-normal text-2xl italic" id="hotel-title">
-                {rightProjects[index].title}
+                {rightProjects[containerId].title}
               </h4>
-              <span className="text-lg font-light text-neutral-400 sm:inline-block block" id="hotel-description" dangerouslySetInnerHTML={{ __html: rightProjects[index].description }}></span>
+              <span className="text-lg font-light text-neutral-400 sm:inline-block block" id="hotel-description" dangerouslySetInnerHTML={{ __html: rightProjects[containerId].description }}></span>
             </React.Fragment>
           ))}
           <br />

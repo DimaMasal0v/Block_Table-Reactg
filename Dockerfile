@@ -13,6 +13,10 @@ RUN npm install
 # Копируем исходный код
 COPY . .
 
+# Устанавливаем переменную окружения для заголовка
+ARG REACT_APP_TITLE
+ENV REACT_APP_TITLE=${REACT_APP_TITLE}
+
 # Собираем приложение
 RUN npm run build
 
@@ -33,5 +37,3 @@ EXPOSE 3000
 
 # Определяем команду для запуска контейнера
 CMD ["serve", "-s", "build"]
-
-

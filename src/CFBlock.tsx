@@ -7,7 +7,7 @@ interface Image {
 }
 
 interface Project {
-  title: string;
+  title?: string;
   description: string;
 }
 
@@ -18,8 +18,8 @@ interface Button {
 }
 
 interface Section {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
   images: Image[];
   projects: Project[];
   button: Button;

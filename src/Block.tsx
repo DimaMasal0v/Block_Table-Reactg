@@ -4,7 +4,7 @@ import './App.css';
 interface BlockProps {
   blocks: {
     id: string; // Уникальный идентификатор
-    title: string;
+    title?: string;
     description: string;
     img: string;
   }[];

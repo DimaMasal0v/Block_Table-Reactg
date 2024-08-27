@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface TitleProps {
-    title: string;
-    subtitle: string;
+    title?: string;
+    subtitle?: string;
 }
 
 const Title: React.FC<TitleProps> = ({ title, subtitle }) => {

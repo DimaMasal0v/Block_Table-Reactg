@@ -18,3 +18,4 @@ const AwardItem: React.FC<AwardItemProps> = ({ img, text }) => {
 
 export default AwardItem;
 
+

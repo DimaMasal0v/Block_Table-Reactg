@@ -1,17 +1,16 @@
 import React from "react";
+import AwardItem from "./AwardItem"; // Импортируем компонент AwardItem
 
 interface Award {
   img: string;
   text: string;
-  containerId: string;  // Уникальный идентификатор
+  containerId: string; // Уникальный идентификатор
 }
 
 interface AwardsProps {
-  title: string;
+  title?: string;
   awards: Award[];
 }
-
-
 
 const Awards: React.FC<AwardsProps> = ({ title, awards }) => {
   return (
@@ -22,23 +21,9 @@ const Awards: React.FC<AwardsProps> = ({ title, awards }) => {
             {title}
           </p>
         </div>
-        <div
-          className="svg flex justify-center absolute left-36 sm:mt-6 xl:flex-no-wrap flex-col xl:grid grid-flow-col"
-        >
+        <div className="svg flex justify-center absolute left-36 sm:mt-6 xl:flex-no-wrap flex-col xl:grid grid-flow-col">
           {awards.map(({ img, text, containerId }) => (
-            <div
-              key={containerId}
-              className="sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3"
-            >
-              <img
-                className="mr-3"
-                src={img}
-                alt={text}
-              />
-              <span className="sm:text-sm text-xs font-normal text-white pt-6">
-                {text}
-              </span>
-            </div>
+            <AwardItem key={containerId} img={img} text={text} /> // Используем AwardItem для каждого элемента награды
           ))}
         </div>
       </div>
@@ -47,5 +32,3 @@ const Awards: React.FC<AwardsProps> = ({ title, awards }) => {
 };
 
 export default Awards;
-
-

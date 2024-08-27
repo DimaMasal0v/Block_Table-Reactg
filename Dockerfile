@@ -17,6 +17,10 @@ COPY . .
 ARG REACT_APP_TITLE
 ENV REACT_APP_TITLE=${REACT_APP_TITLE}
 
+# Добавляем аргумент сборки для даты запуска
+ARG BUILD_DATE
+ENV REACT_APP_BUILD_DATE=${BUILD_DATE}
+
 # Собираем приложение
 RUN npm run build
 

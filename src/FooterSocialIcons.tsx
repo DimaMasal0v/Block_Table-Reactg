@@ -1,12 +1,14 @@
-import React from "react";
+import React from 'react';
 import './App.css';
 
+// Определение интерфейса для SocialIcon
 interface SocialIcon {
   id: string;
   link: string;
   icon: string;
 }
 
+// Определение интерфейса для пропсов компонента FooterSocialIcons
 interface FooterSocialIconsProps {
   connectLabel: string;
   socialIcons: SocialIcon[];
@@ -29,5 +31,3 @@ const FooterSocialIcons: React.FC<FooterSocialIconsProps> = ({ connectLabel, soc
 };
 
 export default FooterSocialIcons;
-
-

@@ -1,13 +1,17 @@
 # Этап 1: Сборка приложения
-FROM node:14 AS build
+FROM node:20 AS build
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
 # Копируем package.json и package-lock.json для установки зависимостей
+#Эта команда копирует файлы package.json и package-lock.json из текущего контекста сборки в рабочую директорию контейнера.
+#Файлы package.json и package-lock.json содержат список всех зависимостей, необходимых для вашего приложения, и точные версии, которые должны быть установлены.
 COPY package*.json ./
 
 # Устанавливаем зависимости
+#Эта команда запускает npm install в контейнере.
+#npm install читает файл package.json (и при наличии package-lock.json), чтобы определить, какие зависимости нужно установить. Затем оно загружает и устанавливает все зависимости в node_modules.
 RUN npm install
 
 # Копируем исходный код
@@ -25,7 +29,7 @@ ENV REACT_APP_BUILD_DATE=${BUILD_DATE}
 RUN npm run build
 
 # Этап 2: Создание финального образа для продакшена
-FROM node:14-slim
+FROM node:20-slim 
 
 # Устанавливаем сервер для статических файлов
 RUN npm install -g serve

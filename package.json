@@ -15,6 +15,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+    "start": "vite", 
     "test": "vitest"
   },
   "eslintConfig": {

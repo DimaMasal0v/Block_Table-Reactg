@@ -1,0 +1,6 @@
+{
+    "name": "NodeJS Docker App",
+    "version": "1.0.0",
+    "description": "Приложение на Node.js, которое возвращает JSON-данные"
+  }
+  
